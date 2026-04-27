@@ -391,7 +391,7 @@ def login_page():
         with c1:
             st.image("logo.png", width=80)
         with c2:
-            st.markdown("## OWIX Daily ")
+            st.markdown("## Owix Daily Tracker ")
         st.markdown("##### Login to continue")
         st.markdown("")
 
