@@ -20,8 +20,8 @@ from openpyxl.utils import get_column_letter
 # PAGE CONFIG (must be first Streamlit command)
 # ============================================================================
 st.set_page_config(
-    page_title="APDF Tracker",
-    page_icon="📄",
+    page_title="Owix Tracker",
+    page_icon="logo.png",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -86,7 +86,7 @@ st.markdown("""
 # ============================================================================
 # DATABASE
 # ============================================================================
-DB_PATH = "tracker.db"
+DB_PATH = os.path.join(os.path.expanduser("~"), "tracker.db")
 
 
 def hash_pw(pw: str) -> str:
@@ -386,8 +386,13 @@ def login_page():
 
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
+        with col2:
         st.markdown("<br><br>", unsafe_allow_html=True)
-        st.markdown("# 📄 APDF Tracker")
+        c1, c2 = st.columns([1, 5])
+        with c1:
+            st.image("logo.png", width=80)
+        with c2:
+            st.markdown("## OWIX Daily Tracker")
         st.markdown("##### Login to continue")
         st.markdown("")
 
