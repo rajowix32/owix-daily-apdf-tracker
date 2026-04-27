@@ -86,7 +86,7 @@ st.markdown("""
 # ============================================================================
 # DATABASE
 # ============================================================================
-DB_PATH = "tracker.db"
+DB_PATH = os.path.join(os.path.expanduser("~"), "tracker.db")
 
 
 def hash_pw(pw: str) -> str:
@@ -294,7 +294,7 @@ def login_page():
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
         st.markdown("<br><br>", unsafe_allow_html=True)
-        st.markdown("# 📄 APDF Tracker")
+        st.markdown("# 📄 OWIX Daily Tracker")
         st.markdown("##### Login to continue")
         st.markdown("")
 
