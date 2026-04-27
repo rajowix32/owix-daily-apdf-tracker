@@ -20,8 +20,8 @@ from openpyxl.utils import get_column_letter
 # PAGE CONFIG (must be first Streamlit command)
 # ============================================================================
 st.set_page_config(
-    page_title="APDF Tracker",
-    page_icon="📄",
+    page_title="OWIX Tracker",
+    page_icon="logo.png",
     layout="wide",
     initial_sidebar_state="expanded",
 )
