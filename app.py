@@ -294,7 +294,13 @@ def login_page():
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
         st.markdown("<br><br>", unsafe_allow_html=True)
-        st.markdown("# 📄 OWIX Daily Tracker")
+                c1, c2 = st.columns([1, 5])
+
+        with c1:
+            st.image("logo.png", width=55)
+
+        with c2:
+            st.markdown("## OWIX Daily Tracker")
         st.markdown("##### Login to continue")
         st.markdown("")
 
